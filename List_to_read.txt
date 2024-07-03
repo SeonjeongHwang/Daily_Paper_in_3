@@ -13,3 +13,6 @@ Quality Controlled Paraphrase Generation (https://aclanthology.org/2022.acl-long
 Dictionary-Guided Editing Networks for Paraphrase Generation (https://dl.acm.org/doi/pdf/10.1609/aaai.v33i01.33016546)
 Parameter Efficient Diverse Paraphrase Generation Using Sequence-Level Knowledge Distillation (https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=10473289)
 Paraphrase Generation with Deep Reinforcement Learning (https://aclanthology.org/D18-1421.pdf)
+
+[LLM Knowledge Distillation]
+LaMini-LM: A Diverse Herd of Distilled Models from Large-Scale Instructions (https://aclanthology.org/2024.eacl-long.57.pdf)
