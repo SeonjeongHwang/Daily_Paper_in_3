@@ -26,3 +26,10 @@ _Paraphrase Generation, LLM, Knowledge Distillation_
 + ChatGPT를 활용한 data-centric sequence-level knowledge distillation (T5-small, Flan T5-small, BART-base 등 small LM에 LoRA까지 사용하여 computationally efficient하게 훈련)
 + ChatGPT의 temperature를 0으로 설정한 뒤 주어진 sentence의 paraphrase들을 list 형식으로 반환하게함 -> 200만 쌍의 paraphrase pair를 구축
 + Inference 단계에서 decoding hyperparameter들을 유연하게 조절 (top-p, top-k, beam size 등)
+
+### Quality Controlled Paraphrase Generation   
+ACL 2022, <https://aclanthology.org/2022.acl-long.45.pdf>
+_Paraphrase Generation__
++ Paraphrase의 Qualtity를 three dimenstion으로 구분 및 생성 조절: semantic similarity (Bleurt score), syntactic diversity (tree edit distance), lexical diversity (character-level minimal edit distance)
++ 주어진 sentence로 모든 paraphrase quality에 도달할 수 있다는 보장이 없음 (고유명사, 숫자 등) -> sentence-aware quality control
++ syntactic&lexical offset을 너무 크게 주면 semantic score가 발산하므로 dev set을 통해 "semantic score를 특정 값 이상으로 유지하면서 linguisitc diversity를 최대화하는 offset"을 선택하여 test set에 사용
