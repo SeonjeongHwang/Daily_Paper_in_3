@@ -1,5 +1,13 @@
 # Daily Paper in 3 Sentences
-**Keywords**: Dataset, Education
+**Keywords**: Dataset, Education, LLM, Korean, Vocab Expansion
+
+[2024.07.04]
+### Efficient and Effective Vocabulary Expansion Towards Multilingual Large Language Models
+Archive 2024, <https://arxiv.org/pdf/2402.14714>
+_Korean | LLM | Vocab Expansion_
++ English-centric LLM의 tokenizer를 사용했을 때 한국어는 더 많은 토큰으로 분리됨 -> longer response times, shorter context lengths, higher API costs
++ 새로운 vocab이 반영된 embedding layer와 LM head를 업데이트하기 위해 6단계의 순차적 훈련 -> 모델이 기존 token과 새로운 token들을 align할 수 있도록
++ pretraining 단계에서 Transformer layer들을 업데이트하기 위해 QLoRA 활용, fine-tuning 단계에서는  DPO 적용 및 영어 intruction tuning 데이터 번역해서 활용
 
 ---------------------------------------
 # + $\alpha$
