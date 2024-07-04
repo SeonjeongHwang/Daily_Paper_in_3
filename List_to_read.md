@@ -2,8 +2,8 @@
 LLM continual learning, Vocabulary Expansion, Instruction Tuning
 
 2024.07.03
-1. Efficient and Effective Vocabulary Expansion Towards Multilingual Large Language Models (https://arxiv.org/pdf/2402.14714)
-2. Direct Preference Optimization: Your Language Model is Secretly a Reward Model (https://proceedings.neurips.cc/paper_files/paper/2023/file/a85b405ed65c6477a4fe8302b5e06ce7-Paper-Conference.pdf)
+~~Efficient and Effective Vocabulary Expansion Towards Multilingual Large Language Models (https://arxiv.org/pdf/2402.14714)~~
+Direct Preference Optimization: Your Language Model is Secretly a Reward Model (https://proceedings.neurips.cc/paper_files/paper/2023/file/a85b405ed65c6477a4fe8302b5e06ce7-Paper-Conference.pdf)
 
 --------------------------------------------
 [Paraphrase Generation]
