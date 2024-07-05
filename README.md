@@ -41,3 +41,10 @@ _Paraphrase Generation_
 + Paraphrase의 Qualtity를 three dimenstion으로 구분 및 생성 조절: semantic similarity (Bleurt score), syntactic diversity (tree edit distance), lexical diversity (character-level minimal edit distance)
 + 주어진 sentence로 모든 paraphrase quality에 도달할 수 있다는 보장이 없음 (고유명사, 숫자 등) -> sentence-aware quality control
 + syntactic&lexical offset을 너무 크게 주면 semantic score가 발산하므로 dev set을 통해 "semantic score를 특정 값 이상으로 유지하면서 linguisitc diversity를 최대화하는 offset"을 선택하여 test set에 사용
+
+### Dictionary-Guided Editing Networks for Paraphrase Generation
+AAAI 2019, <https://dl.acm.org/doi/pdf/10.1609/aaai.v33i01.33016546>   
+_Paraphrase Generation_
++ Paraphrase Database (PPDB)은 lexical, phrasal, syntactic type의 paraphrase들을 저장 (여러 언어를 지원하지만 한국어는 없음)
++ TF-IDF, PPDB score 등을 통해 source sentence에 대한 paraphrasing pair candidate들을 retrieval
++ sequence-to-sequence with attention mechanism: 각 decoding step에서 candidate pair들과의 soft attention mechanism을 통해 word의 deletion 및 insertion을 결정
