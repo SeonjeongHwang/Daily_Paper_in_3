@@ -3,7 +3,7 @@ _LLM continual learning, Vocabulary Expansion, Instruction Tuning_
 
 [2024.07.03]   
 ~~Efficient and Effective Vocabulary Expansion Towards Multilingual Large Language Models~~ (https://arxiv.org/pdf/2402.14714)   
-Direct Preference Optimization: Your Language Model is Secretly a Reward Model (https://proceedings.neurips.cc/paper_files/paper/2023/file/a85b405ed65c6477a4fe8302b5e06ce7-Paper-Conference.pdf)   
+Direct Preference Optimization: Your Language Model is Secretly a Reward Model (https://arxiv.org/pdf/2305.18290)   
 
 --------------------------------------------   
 **[Paraphrase Generation]**   
@@ -19,5 +19,5 @@ Neural Syntactic Preordering for Controlled Paraphrase Generation (https://aclan
 **[LLM Knowledge Distillation]**   
 LaMini-LM: A Diverse Herd of Distilled Models from Large-Scale Instructions (https://aclanthology.org/2024.eacl-long.57.pdf)   
 
-**[LLM Fine-tuning]**
+**[LLM Fine-tuning]**   
 Fine-Tuning Language Models from Human Preferences (https://arxiv.org/pdf/1909.08593)
