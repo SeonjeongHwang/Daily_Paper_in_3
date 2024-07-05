@@ -18,3 +18,6 @@ Neural Syntactic Preordering for Controlled Paraphrase Generation (https://aclan
 
 **[LLM Knowledge Distillation]**   
 LaMini-LM: A Diverse Herd of Distilled Models from Large-Scale Instructions (https://aclanthology.org/2024.eacl-long.57.pdf)   
+
+**[LLM Fine-tuning]**
+Fine-Tuning Language Models from Human Preferences (https://arxiv.org/pdf/1909.08593)
