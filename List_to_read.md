@@ -3,7 +3,7 @@ _LLM continual learning, Vocabulary Expansion, Instruction Tuning_
 
 [2024.07.03]   
 ~~Efficient and Effective Vocabulary Expansion Towards Multilingual Large Language Models~~ (https://arxiv.org/pdf/2402.14714)   
-Direct Preference Optimization: Your Language Model is Secretly a Reward Model (https://arxiv.org/pdf/2305.18290)   
+~~Direct Preference Optimization: Your Language Model is Secretly a Reward Model~~ (https://arxiv.org/pdf/2305.18290)   
 
 --------------------------------------------   
 **[Paraphrase Generation]**   
