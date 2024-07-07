@@ -1,5 +1,5 @@
 # Daily Paper in 3 Sentences
-**Keywords**: Dataset, Education, LLM, Korean, Vocab Expansion, Paraphrase Generation, Knowledge Distillation, Fine-tuning
+**Keywords**: Dataset, Education, LLM, sLM, Korean, Vocab Expansion, Paraphrase Generation, Knowledge Distillation, Fine-tuning
 
 [2024.07.04]
 ### (EEVE) Efficient and Effective Vocabulary Expansion Towards Multilingual Large Language Models
@@ -46,14 +46,21 @@ _Paraphrase Generation_
 ### Dictionary-Guided Editing Networks for Paraphrase Generation
 AAAI 2019, <https://dl.acm.org/doi/pdf/10.1609/aaai.v33i01.33016546>   
 _Paraphrase Generation_
++ Paraphrase Database (PPDB)로부터 input sentence와 유사한 word/phrase-level paraphrase pair candidate들을 검색 (TF-IDF, PPDB score 등을 통해 유사도 측정)
++ attention mechanism을 적용한 seq2seq 모델 활용 -> decoding step마다 candidate pair들과 soft attention을 통해 deletion 및 insertion을 결정
 + Paraphrase Database (PPDB)은 lexical, phrasal, syntactic type의 paraphrase들을 저장 (여러 언어를 지원하지만 한국어는 없음)
-+ TF-IDF, PPDB score 등을 통해 source sentence에 대한 paraphrasing pair candidate들을 retrieval
-+ sequence-to-sequence with attention mechanism: 각 decoding step에서 candidate pair들과의 soft attention mechanism을 통해 word의 deletion 및 insertion을 결정
 
 [2024.07.07]
 ### MCPG: A Flexible Multi-Level Controllable Framework for Unsupervised Paraphrase Generation
 EMNLP Findings 2022, <https://aclanthology.org/2022.findings-emnlp.439.pdf>   
 _Paraphrase Generation_
-+ BERT에 drop-out을 적용하여 input sentence로부터 여러 semantic embedding 생성 (drop-out 없는 embedding과의 cosine similarity > 0.75 이어야 의미가 유지됨)
++ input sentence의 semantic embedding의 variation들을 Encoder의 dropout probability를 통해 조절 (dropout 전후의 embedding의 cosine similarity가 0.75 이상인 경우만 의미가 유지됨)
 + T5를 기반으로 input sentence의 named entity들 사이의 special token들을 infilling하는 task로 접근 -> T5 encoder의 output representation 앞에 BERT의 drop-out을 거친 semantic embedding을 concat하여 decoding
 + target domain의 paraphrase pair들을 활용할 수 있는 경우, input sentence와 cosine similarity가 가장 높은 pair를 찾아 pair 간의 style 차이를 input sentence embedding에 더하여 활용 (Style transfer)
+
+### Impossible Distillation for Paraphrasing and Summarization: How to Make High-quality Lemonade out of Small, Low-quality Models
+NAACL 2024, <https://aclanthology.org/2024.naacl-long.250.pdf>   
+_Paraphrase Generation | sLM | Knowledge Distilation_   
++ informative context가 주어졌을 때 LM은 서로 paraphrase되는 여러 문장들을 생성할 수 있음 (necleus sampling 활용)
++ semantic equivalence filter (NLI), dissimilarity filter (ROUGE-L, TED), diversity filter (NLI)를 통해 생성된 paraphrase pool로부터 구성된 pair들을 필터링
++ teacher (GPT2-XL, 1.5B) 모델로 생성한 데이텨로 student (T5-large) 모델을 훈련 & self-distillation (훈련된 student 모델의 inference 결과를 필터링 후 다시 훈련 데이터로 활용)
