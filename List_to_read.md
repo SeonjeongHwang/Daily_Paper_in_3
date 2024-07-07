@@ -14,7 +14,8 @@ Impossible Distillation for Paraphrasing and Summarization: How to Make High-qua
 ~~Parameter Efficient Diverse Paraphrase Generation Using Sequence-Level Knowledge Distillation~~ (https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=10473289)   
 Paraphrase Generation with Deep Reinforcement Learning (https://aclanthology.org/D18-1421.pdf)   
 User-Oriented Paraphrase Generation With Keywords Controlled Network (https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=8736871)   
-Neural Syntactic Preordering for Controlled Paraphrase Generation (https://aclanthology.org/2020.acl-main.22.pdf)
+Neural Syntactic Preordering for Controlled Paraphrase Generation (https://aclanthology.org/2020.acl-main.22.pdf)   
+Unsupervised Paraphrasing with Pretrained Language Models (https://aclanthology.org/2021.emnlp-main.417/)   
 
 **[LLM Knowledge Distillation]**   
 LaMini-LM: A Diverse Herd of Distilled Models from Large-Scale Instructions (https://aclanthology.org/2024.eacl-long.57.pdf)   
