@@ -28,3 +28,7 @@ LaMini-LM: A Diverse Herd of Distilled Models from Large-Scale Instructions (htt
 
 **[LLM Fine-tuning]**   
 Fine-Tuning Language Models from Human Preferences (https://arxiv.org/pdf/1909.08593)
+
+**[Constrained Generation]**   
+NEUROLOGIC A Fesque Decoding: Constrained Text Generation with Lookahead Heuristics (https://aclanthology.org/2022.naacl-main.57.pdf)  
+Generating Summaries with Controllable Readability Levels (https://arxiv.org/pdf/2310.10623)
