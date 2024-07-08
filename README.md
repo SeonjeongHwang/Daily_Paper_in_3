@@ -64,3 +64,10 @@ _Paraphrase Generation | sLM | Knowledge Distilation_
 + informative context가 주어졌을 때 LM은 서로 paraphrase되는 여러 문장들을 생성할 수 있음 (necleus sampling 활용)
 + semantic equivalence filter (NLI), dissimilarity filter (ROUGE-L, TED), diversity filter (NLI)를 통해 생성된 paraphrase pool로부터 구성된 pair들을 필터링
 + teacher (GPT2-XL, 1.5B) 모델로 생성한 데이텨로 student (T5-large) 모델을 훈련 & self-distillation (훈련된 student 모델의 inference 결과를 필터링 후 다시 훈련 데이터로 활용)
+
+### (BERT-iBLEU) Unsupervised Paraphrasing with Pretrained Language Models
+EMNLP 2021, <https://aclanthology.org/2021.emnlp-main.417.pdf>   
+_Paraphrase Generation_
++ BERT-iBLEU score: semantic similarity가 높으면서 surface-form similarity가 낮을 때 높은 점수를 부여하는 metric (paraphrase generation 논문들에서 많이 활용되고 있음)
++ supervised learning이 되지 않은 pretrained LM을 활용해 paraphrase를 생성하기 위해 decoding 단계에 constraint를 부여 -> Dynamic Blocking
++ Dynamic Blocking은 source text의 ($s_i$, $s_{i+1}$)들을 확률적으로 sampling한 뒤 decoding의 $j$-step에서 $s_i$가 생성되면 $j+1$-step에서 $s_{i+1}$의 probability를 0으로 만듦
