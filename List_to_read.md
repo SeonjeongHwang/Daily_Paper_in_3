@@ -1,13 +1,19 @@
 ### Interesting Keywords
 _LLM continual learning, Vocabulary Expansion, Instruction Tuning_
 
-[2024.07.03]   
+[2024.07.04-05]   
 ~~Efficient and Effective Vocabulary Expansion Towards Multilingual Large Language Models~~ (https://arxiv.org/pdf/2402.14714)   
 ~~Direct Preference Optimization: Your Language Model is Secretly a Reward Model~~ (https://arxiv.org/pdf/2305.18290)   
 
+[2024.07.09-12]   
+Gemma 2: Improving Open Language Models at a Practical Size (https://storage.googleapis.com/deepmind-media/gemma/gemma-2-report.pdf)   
+LoRA: Low-rank adaptation of large language models (https://arxiv.org/pdf/2106.09685)   
+Fine-grained Gender Control in Machine Translation with Large Language Models (https://aclanthology.org/2024.naacl-long.303.pdf)   
+MiniLLM: Knowledge Distillation of Large Language Models (https://arxiv.org/pdf/2306.08543)   
+
 --------------------------------------------   
 **[Paraphrase Generation]**   
-Impossible Distillation for Paraphrasing and Summarization: How to Make High-quality Lemonade out of Small, Low-quality Models (https://aclanthology.org/2024.naacl-long.250.pdf)   
+~~Impossible Distillation for Paraphrasing and Summarization: How to Make High-quality Lemonade out of Small, Low-quality Models~~ (https://aclanthology.org/2024.naacl-long.250.pdf)   
 ~~MCPG: A Flexible Multi-Level Controllable Framework for Unsupervised Paraphrase Generation~~ (https://aclanthology.org/2022.findings-emnlp.439.pdf)   
 ~~Quality Controlled Paraphrase Generation~~ (https://aclanthology.org/2022.acl-long.45.pdf)   
 ~~Dictionary-Guided Editing Networks for Paraphrase Generation~~ (https://dl.acm.org/doi/pdf/10.1609/aaai.v33i01.33016546)    
