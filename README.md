@@ -65,6 +65,7 @@ _Paraphrase Generation | sLM | Knowledge Distilation_
 + semantic equivalence filter (NLI), dissimilarity filter (ROUGE-L, TED), diversity filter (NLI)를 통해 생성된 paraphrase pool로부터 구성된 pair들을 필터링
 + teacher (GPT2-XL, 1.5B) 모델로 생성한 데이텨로 student (T5-large) 모델을 훈련 & self-distillation (훈련된 student 모델의 inference 결과를 필터링 후 다시 훈련 데이터로 활용)
 
+[2024.07.08]
 ### (BERT-iBLEU) Unsupervised Paraphrasing with Pretrained Language Models
 EMNLP 2021, <https://aclanthology.org/2021.emnlp-main.417.pdf>   
 _Paraphrase Generation_
