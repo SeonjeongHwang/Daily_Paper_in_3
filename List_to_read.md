@@ -32,3 +32,8 @@ Fine-Tuning Language Models from Human Preferences (https://arxiv.org/pdf/1909.0
 **[Constrained Generation]**   
 NEUROLOGIC A Fesque Decoding: Constrained Text Generation with Lookahead Heuristics (https://aclanthology.org/2022.naacl-main.57.pdf)  
 Generating Summaries with Controllable Readability Levels (https://arxiv.org/pdf/2310.10623)
+
+**[NLI Data Generation]**   
+Beyond the Obvious Multi-choice Options: Introducing a Toolkit for Distractor Generation Enhanced with NLI Filtering (https://link.springer.com/chapter/10.1007/978-3-031-64299-9_18)   
+MENLI: Robust Evaluation Metrics from Natural Language Inference (https://direct.mit.edu/tacl/article/doi/10.1162/tacl_a_00576/116715)
+Falsesum: Generating Document-level NLI Examples for Recognizing Factual Inconsistency in Summarization (https://arxiv.org/pdf/2205.06009)
