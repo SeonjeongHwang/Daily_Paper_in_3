@@ -1,5 +1,5 @@
 # Daily Paper in 3 Sentences
-**Keywords**: Dataset, Education, LLM, sLM, Korean, Vocab Expansion, Paraphrase Generation, Knowledge Distillation, Fine-tuning
+**Keywords**: Dataset, Education, LLM, sLM, Korean, Vocab Expansion, Paraphrase Generation, Knowledge Distillation, Fine-tuning, Controlled Generation
 
 [2024.07.04]
 ### (EEVE) Efficient and Effective Vocabulary Expansion Towards Multilingual Large Language Models
@@ -16,6 +16,14 @@ _Fine-tuning_
 + RLHF는 human preference data로 reward model을 훈련 시킨 뒤, 이를 기반으로 RL을 통해 LM을 업데이트함
 + DPO는 reward model을 별도로 두지 않고, reward function을 optimial policy에 대한 수식으로 표현 후 human preference data를 이용해 바로 LM을 업데이트함
 + human preference data가 없는 controlled sentiment generation task를 위해 pretrained sentiment classifier 모델을 이용해 pair 구축함: $x$로부터 $y_1$, $y_2$를 생성한 뒤 p( $positive$ | $x$, $y_w$ ) > p( $postive$ | $x$, $y_l$ )로 preference labeling
+
+[2024.07.12]   
+### Fine-grained Gender Control in Machine Translation with Large Language Models
+NAACL 2024, <https://aclanthology.org/2024.naacl-long.303.pdf>   
+_LLM, Controlled Generation_   
++ 번역 src text에 포함된 ambiguous entity들 (ex, cook, lawyer)에 성별을 지정하여 번역 문장에서 gender expression들이 명확하게 사용될 수 있도록 함
++ LLama2-70B, GPT-3.5-turbo에 간단한 prompt engineering으로 해결 (gender annotation 정보를 추가로 입력)
++ LLM이 스스로 context로부터 entity들의 gender를 유추한 뒤 translation에 활용하는 CoT와 같은 방법론도 효과가 있었지만 pseudo-label gender를 명시해 주는 것보다는 낮은 성능을 보임
 
 ---------------------------------------
 # + $\alpha$
