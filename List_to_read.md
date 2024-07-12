@@ -8,7 +8,7 @@ _LLM continual learning, Vocabulary Expansion, Instruction Tuning_
 [2024.07.09-12]   
 Gemma 2: Improving Open Language Models at a Practical Size (https://storage.googleapis.com/deepmind-media/gemma/gemma-2-report.pdf)   
 LoRA: Low-rank adaptation of large language models (https://arxiv.org/pdf/2106.09685)   
-Fine-grained Gender Control in Machine Translation with Large Language Models (https://aclanthology.org/2024.naacl-long.303.pdf)   
+~~Fine-grained Gender Control in Machine Translation with Large Language Models~~ (https://aclanthology.org/2024.naacl-long.303.pdf)   
 MiniLLM: Knowledge Distillation of Large Language Models (https://arxiv.org/pdf/2306.08543)   
 
 --------------------------------------------   
@@ -35,5 +35,5 @@ Generating Summaries with Controllable Readability Levels (https://arxiv.org/pdf
 
 **[NLI Data Generation]**   
 Beyond the Obvious Multi-choice Options: Introducing a Toolkit for Distractor Generation Enhanced with NLI Filtering (https://link.springer.com/chapter/10.1007/978-3-031-64299-9_18)   
-MENLI: Robust Evaluation Metrics from Natural Language Inference (https://direct.mit.edu/tacl/article/doi/10.1162/tacl_a_00576/116715)
-Falsesum: Generating Document-level NLI Examples for Recognizing Factual Inconsistency in Summarization (https://arxiv.org/pdf/2205.06009)
+MENLI: Robust Evaluation Metrics from Natural Language Inference (https://direct.mit.edu/tacl/article/doi/10.1162/tacl_a_00576/116715)   
+Falsesum: Generating Document-level NLI Examples for Recognizing Factual Inconsistency in Summarization (https://arxiv.org/pdf/2205.06009)   
