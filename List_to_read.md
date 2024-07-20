@@ -36,9 +36,9 @@ Generating Summaries with Controllable Readability Levels (https://arxiv.org/pdf
 **[NLI Data Generation]**   
 Beyond the Obvious Multi-choice Options: Introducing a Toolkit for Distractor Generation Enhanced with NLI Filtering (https://link.springer.com/chapter/10.1007/978-3-031-64299-9_18)   
 MENLI: Robust Evaluation Metrics from Natural Language Inference (https://direct.mit.edu/tacl/article/doi/10.1162/tacl_a_00576/116715)   
-Falsesum: Generating Document-level NLI Examples for Recognizing Factual Inconsistency in Summarization (https://arxiv.org/pdf/2205.06009)   
-NonFactS: NonFactual Summary Generation for Factuality Evaluation in Document Summarization (https://aclanthology.org/2023.findings-acl.400.pdf)    
-AMRFACT: Enhancing Summarization Factuality Evaluation with AMR-Driven Negative Samples Generation (https://aclanthology.org/2024.naacl-long.33.pdf)   
+~~Falsesum: Generating Document-level NLI Examples for Recognizing Factual Inconsistency in Summarization~~ (https://arxiv.org/pdf/2205.06009)   
+~~NonFactS: NonFactual Summary Generation for Factuality Evaluation in Document Summarization~~ (https://aclanthology.org/2023.findings-acl.400.pdf)    
+~~AMRFACT: Enhancing Summarization Factuality Evaluation with AMR-Driven Negative Samples Generation~~ (https://aclanthology.org/2024.naacl-long.33.pdf)   
 BioNLI: Generating a Biomedical NLI Dataset Using Lexico-semantic Constraints for Adversarial Examples (https://arxiv.org/pdf/2210.14814)   
 On the Intractability to Synthesize Factual Inconsistencies in Summarization (https://aclanthology.org/2024.findings-eacl.69.pdf)   
 Evaluating the Factual Consistency of Abstractive Text Summarization (https://aclanthology.org/2020.emnlp-main.750.pdf)   
