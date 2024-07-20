@@ -95,3 +95,10 @@ _NLI Generation_
 + 합성된 nonfactual summary가 surface-form을 통해 구별될 수 없도록 truncate된 summary를 완성하는 방식으로 생성
 + Document, truncated original summary, seeds (document와 지워진 summary word 중 랜덤하게 추출)이 주어졌을 때 original summary를 생성하도록 훈련
 + gold summary를 positive로, 생성한 summary를 negative로 classifier 훈련 -> 구분을 잘 못할 수록 생성된 summary의 grammar와 fluency가 좋다고 해석
+
+### AMRFACT: Enhancing Summarization Factuality Evaluation with AMR-Driven Negative Samples Generation
+NAACL 2024, <https://aclanthology.org/2024.naacl-long.33.pdf>   
+_NLI Generation_   
++ original summary를 abstract meaning representation (AMR) graph로 전환한 뒤 error를 추가 후 text로 전환 (5가지 error 종류를 커버함)
++ 생성된 inconsistent summary는 document로부터 추론할 수 없는 내용이어야하며 (sent-level NLI로 체크: document가 premise), document와 동떨어진 topic은 아니어야한다 (BARTScore로 체크)
++ AMR2text, text2AMR은 깃헙소스 활용 (https://github.com/bjascob/amrlib-models), error 생성시 반의어를 찾기 위해 ConceptNet을 활용
