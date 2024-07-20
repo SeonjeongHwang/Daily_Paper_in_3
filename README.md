@@ -1,5 +1,5 @@
 # Daily Paper in 3 Sentences
-**Keywords**: Dataset, Education, LLM, sLM, Korean, Vocab Expansion, Paraphrase Generation, Knowledge Distillation, Fine-tuning, Controlled Generation
+**Keywords**: Dataset, Education, LLM, sLM, Korean, Vocab Expansion, Paraphrase Generation, Knowledge Distillation, Fine-tuning, Controlled Generation, NLI Generation
 
 [2024.07.04]
 ### (EEVE) Efficient and Effective Vocabulary Expansion Towards Multilingual Large Language Models
@@ -80,3 +80,11 @@ _Paraphrase Generation_
 + BERT-iBLEU score: semantic similarity가 높으면서 surface-form similarity가 낮을 때 높은 점수를 부여하는 metric (paraphrase generation 논문들에서 많이 활용되고 있음)
 + supervised learning이 되지 않은 pretrained LM을 활용해 paraphrase를 생성하기 위해 decoding 단계에 constraint를 부여 -> Dynamic Blocking
 + Dynamic Blocking은 source text의 ($s_i$, $s_{i+1}$)들을 확률적으로 sampling한 뒤 decoding의 $j$-step에서 $s_i$가 생성되면 $j+1$-step에서 $s_{i+1}$의 probability를 0으로 만듦
+
+[2024.07.19]
+### Falsesum: Generating Document-level NLI Examples for Recognizing Factual Inconsistency in Summarization
+NAACL 2022, <https://aclanthology.org/2022.naacl-main.199.pdf>   
+_NLI Generation_   
++ original summary를 document를 고려해 perturb해서 non-entailment summary 생성 -> non-entailment로 통일하여 생성
++ fact들은 OpenIE를 통해 predicate, argument group들로 분리하여 random shuffling 후 입력 -> 이를 활용해 output을 생성하도록 훈련
++ 훈련 단계의 target output은 original summary이며 [intrinsic] gold fact들이 함께 입력되어 output 생성에 활용하도록 한 뒤 test 단계에서는 gold fact들을 제거 / [extrinsic] 훈련 step부터 gold fact들을 제거하여 입력
