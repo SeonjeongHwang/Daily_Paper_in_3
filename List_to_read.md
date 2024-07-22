@@ -45,7 +45,7 @@ MENLI: Robust Evaluation Metrics from Natural Language Inference (https://direct
 ~~Falsesum: Generating Document-level NLI Examples for Recognizing Factual Inconsistency in Summarization~~ (https://arxiv.org/pdf/2205.06009)   
 ~~NonFactS: NonFactual Summary Generation for Factuality Evaluation in Document Summarization~~ (https://aclanthology.org/2023.findings-acl.400.pdf)    
 ~~AMRFACT: Enhancing Summarization Factuality Evaluation with AMR-Driven Negative Samples Generation~~ (https://aclanthology.org/2024.naacl-long.33.pdf)   
-BioNLI: Generating a Biomedical NLI Dataset Using Lexico-semantic Constraints for Adversarial Examples (https://arxiv.org/pdf/2210.14814)   
+~~BioNLI: Generating a Biomedical NLI Dataset Using Lexico-semantic Constraints for Adversarial Examples~~ (https://arxiv.org/pdf/2210.14814)   
 On the Intractability to Synthesize Factual Inconsistencies in Summarization (https://aclanthology.org/2024.findings-eacl.69.pdf)   
 Evaluating the Factual Consistency of Abstractive Text Summarization (https://aclanthology.org/2020.emnlp-main.750.pdf)   
 
