@@ -102,3 +102,11 @@ _NLI Generation_
 + original summary를 abstract meaning representation (AMR) graph로 전환한 뒤 error를 추가 후 text로 전환 (5가지 error 종류를 커버함)
 + 생성된 inconsistent summary는 document로부터 추론할 수 없는 내용이어야하며 (sent-level NLI로 체크: document가 premise), document와 동떨어진 topic은 아니어야한다 (BARTScore로 체크)
 + AMR2text, text2AMR은 깃헙소스 활용 (https://github.com/bjascob/amrlib-models), error 생성시 반의어를 찾기 위해 ConceptNet을 활용
+
+[2024.07.22]
+### BioNLI: Generating a Biomedical NLI Dataset Using Lexico-semantic Constraints for Adversarial Examples
+EMNLP Findings 2022, <https://aclanthology.org/2022.findings-emnlp.374.pdf>   
+_NLI Generation_   
++ 바이오메디컬 도메인의 특성을 반영해 데이터 생성 - premise: experimental evidence (full abstract), hypothesis: higher-level mechanistic information (conclusion sentence)
++ negative hypo 생성을 위해 rule-base (entity swap, position change, negation 등), neural-based method 활용
++ neural based 방법은 abstract를 받아 conclusion을 생성하도록 훈련된 모델 활용, decoding constraint도 추가 (entity 위치 바꾸기 등) -> BLEURT < 0.45이며 entity relationship이 틀린 예시들만 활용
