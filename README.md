@@ -25,6 +25,14 @@ _LLM, Controlled Generation_
 + LLama2-70B, GPT-3.5-turbo에 간단한 prompt engineering으로 해결 (gender annotation 정보를 추가로 입력)
 + LLM이 스스로 context로부터 entity들의 gender를 유추한 뒤 translation에 활용하는 CoT와 같은 방법론도 효과가 있었지만 pseudo-label gender를 명시해 주는 것보다는 낮은 성능을 보임
 
+[2024.07.24]
+### LoRA: Low-rank adaptation of large language models
+ICLR 2022, <https://arxiv.org/pdf/2106.09685>   
+_LLM, sLM, Fine-tuning_   
++ LM을 full fine-tuning하는 대신 기존 trainable parameter의 0.01%만을 업데이트하면 되고, 훈련 완료 후 기존 parameter와 merge할 수 있음
++ Adapter(Houlsby et al.)은 모델 내에서 sequential하게 배치되기 때문에 model parallelism에서 비효율적 / Prefix Tuning (Li & Liang)은 optimize가 어려우며 input sequence의 일부가 고정되므로 비효율적
++ 논문에서는 attention weight들에만 LoRA를 적용했으며 다양한 task에서 full fine-tuning과 비등한 성능을 보임
+
 ---------------------------------------
 # + $\alpha$
 [2024.07.03]   
