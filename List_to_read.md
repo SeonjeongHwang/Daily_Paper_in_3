@@ -13,7 +13,7 @@ MiniLLM: Knowledge Distillation of Large Language Models (https://arxiv.org/pdf/
 
 [2024.07.23-2024.07.26]   
 Gemma 2: Improving Open Language Models at a Practical Size (https://storage.googleapis.com/deepmind-media/gemma/gemma-2-report.pdf)   
-LoRA: Low-rank adaptation of large language models (https://arxiv.org/pdf/2106.09685)  
+~~LoRA: Low-rank adaptation of large language models~~ (https://arxiv.org/pdf/2106.09685)  
 MiniLLM: Knowledge Distillation of Large Language Models (https://arxiv.org/pdf/2306.08543)  
 Evaluating Quantized Large Language Models (https://arxiv.org/pdf/2402.18158)   
 
