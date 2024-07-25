@@ -1,5 +1,5 @@
 # Daily Paper in 3 Sentences
-**Keywords**: Dataset, Education, LLM, sLM, Korean, Vocab Expansion, Paraphrase Generation, Knowledge Distillation, Fine-tuning, Controlled Generation, NLI Generation
+**Keywords**: Dataset, Education, LLM, sLM, Korean, Vocab Expansion, Paraphrase Generation, Knowledge Distillation, Fine-tuning, Controlled Generation, NLI Generation, In-Context Learning
 
 [2024.07.04]
 ### (EEVE) Efficient and Effective Vocabulary Expansion Towards Multilingual Large Language Models
@@ -28,10 +28,18 @@ _LLM, Controlled Generation_
 [2024.07.24]
 ### LoRA: Low-rank adaptation of large language models
 ICLR 2022, <https://arxiv.org/pdf/2106.09685>   
-_LLM, sLM, Fine-tuning_   
+_Fine-tuning_   
 + LM을 full fine-tuning하는 대신 기존 trainable parameter의 0.01%만을 업데이트하면 되고, 훈련 완료 후 기존 parameter와 merge할 수 있음
 + Adapter(Houlsby et al.)은 모델 내에서 sequential하게 배치되기 때문에 model parallelism에서 비효율적 / Prefix Tuning (Li & Liang)은 optimize가 어려우며 input sequence의 일부가 고정되므로 비효율적
 + 논문에서는 attention weight들에만 LoRA를 적용했으며 다양한 task에서 full fine-tuning과 비등한 성능을 보임
+
+[2024.07.25]
+### Enhancing In-Context Learning via Implicit Demonstration Augmentation
+ACL 2024, <https://arxiv.org/pdf/2407.00100>   
+_In-Context Learning_   
++ ICL에서 demonstration의 품질, 개수, 순서 등에 따라 결과의 품질 variance가 높기 때문에 이를 완화하기 위해 demonstration augmentation 방법을 적용하여 output performance를 안정화
++ demonstration($C$)+query($x$)의 hidden state $h_{\tilde{x}}$는 $h_C$와 $h_x$에 span되는 subspace 상에 있다고 가정
++ 전체 Demonstration hidden state들의 mean, variance를 따르는 normal distribution으로부터 추출된 semantic vector를 이용해 $h_C$를 shift시켜서 augmentation -> sampling 없이도 infinite sampling의 기댓값에 대응되는 probability function을 계산해냄 (mean, variance 값을 활용)
 
 ---------------------------------------
 # + $\alpha$
