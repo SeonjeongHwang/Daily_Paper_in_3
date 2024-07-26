@@ -16,9 +16,9 @@ Gemma 2: Improving Open Language Models at a Practical Size (https://storage.goo
 ~~LoRA: Low-rank adaptation of large language models~~ (https://arxiv.org/pdf/2106.09685)  
 MiniLLM: Knowledge Distillation of Large Language Models (https://arxiv.org/pdf/2306.08543)  
 Evaluating Quantized Large Language Models (https://arxiv.org/pdf/2402.18158)   
-Enhancing In-Context Learning via Implicit Demonstration Augmentation (https://arxiv.org/pdf/2407.00100)
+~~Enhancing In-Context Learning via Implicit Demonstration Augmentation~~ (https://arxiv.org/pdf/2407.00100)
 
-[2024.07.29-2024.07.33]
+[2024.07.29-2024.07.33]   
 MELA: Multilingual Evaluation of Linguistic Acceptability (https://arxiv.org/pdf/2311.09033)   
 Probing Language Models for Pre-training Data Detection (https://arxiv.org/pdf/2406.01333)
 Dissecting Human and LLM Preferences (https://arxiv.org/pdf/2402.11296)   
