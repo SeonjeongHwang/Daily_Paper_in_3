@@ -41,6 +41,14 @@ _In-Context Learning_
 + demonstration($C$)+query($x$)의 hidden state $h_{\tilde{x}}$는 $h_C$와 $h_x$에 span되는 subspace 상에 있다고 가정
 + 전체 Demonstration hidden state들의 mean, variance를 따르는 normal distribution으로부터 추출된 semantic vector를 이용해 $h_C$를 shift시켜서 augmentation -> sampling 없이도 infinite sampling의 기댓값에 대응되는 probability function을 계산해냄 (mean, variance 값을 활용)
 
+[2024.07.26]
+### Gemma 2: Improving Open Language Models at a Practical Size
+Technical report 2024, <https://storage.googleapis.com/deepmind-media/gemma/gemma-2-report.pdf>   
+_LLM_   
++ 기존 방식들처럼 많은 token 수로 sLLM을 학습해 성능을 높이는 대신, LLM을 teacher로 이용해 token probability distillation 적용 (scratch부터 학습시키는 것보다 좋은 성능)
++ Gemma2-27B가 Llama3-70B에 약간 뒤쳐짐, Gemma2-9B가 Llama3-8B보다 outperform
++ 영어 데이터 위주로 학습 (multimodal, multilingual에 적용은 힘들듯), prompt format이 논문에 있음
+
 ---------------------------------------
 # + $\alpha$
 [2024.07.03]   
