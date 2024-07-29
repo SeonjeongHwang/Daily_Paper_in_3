@@ -6,8 +6,6 @@ _LLM continual learning, Vocabulary Expansion, Instruction Tuning_
 ~~Direct Preference Optimization: Your Language Model is Secretly a Reward Model~~ (https://arxiv.org/pdf/2305.18290)   
 
 [2024.07.09-12]   
-Gemma 2: Improving Open Language Models at a Practical Size (https://storage.googleapis.com/deepmind-media/gemma/gemma-2-report.pdf)   
-LoRA: Low-rank adaptation of large language models (https://arxiv.org/pdf/2106.09685)   
 ~~Fine-grained Gender Control in Machine Translation with Large Language Models~~ (https://aclanthology.org/2024.naacl-long.303.pdf)   
 MiniLLM: Knowledge Distillation of Large Language Models (https://arxiv.org/pdf/2306.08543)  
 
@@ -19,7 +17,7 @@ Evaluating Quantized Large Language Models (https://arxiv.org/pdf/2402.18158)
 ~~Enhancing In-Context Learning via Implicit Demonstration Augmentation~~ (https://arxiv.org/pdf/2407.00100)
 
 [2024.07.29-2024.07.33]   
-MELA: Multilingual Evaluation of Linguistic Acceptability (https://arxiv.org/pdf/2311.09033)   
+~~MELA: Multilingual Evaluation of Linguistic Acceptability~~ (https://arxiv.org/pdf/2311.09033)   
 Probing Language Models for Pre-training Data Detection (https://arxiv.org/pdf/2406.01333)   
 Dissecting Human and LLM Preferences (https://arxiv.org/pdf/2402.11296)   
 An Iterative Associative Memory Model for Empathetic Response Generation (https://arxiv.org/pdf/2402.17959)   
