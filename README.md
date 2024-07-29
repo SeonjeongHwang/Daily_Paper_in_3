@@ -134,3 +134,11 @@ _NLI Generation_
 + 바이오메디컬 도메인의 특성을 반영해 데이터 생성 - premise: experimental evidence (full abstract), hypothesis: higher-level mechanistic information (conclusion sentence)
 + negative hypo 생성을 위해 rule-base (entity swap, position change, negation 등), neural-based method 활용
 + neural based 방법은 abstract를 받아 conclusion을 생성하도록 훈련된 모델 활용, decoding constraint도 추가 (entity 위치 바꾸기 등) -> BLEURT < 0.45이며 entity relationship이 틀린 예시들만 활용
+
+[2024.07.29]
+### A Synthetic Data Approach for Domain Generalization of NLI Models
+ACL 2024, <https://arxiv.org/pdf/2402.12368>   
+_LLM, NLI Generation_   
++ 다야한 도메인의 NLI 데이터 생성을 위해 few-shot prompting으로 domain 종류 확보 및 sent&para-level premise 생성 : FLAN-PaLM2-L
++ MNLI 데이터셋으로 instruction-tuning된 (100 tokens prompt-tuning) FLAN-PaLM 540B 모델로 hypothesis와 label 쌍을 생성
++ hypothesis 생성시 작은 T5-XL (3B)을 사용하면 데이터 품질이 떨어지고 창의성도 낮음
