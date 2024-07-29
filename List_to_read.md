@@ -60,7 +60,7 @@ MENLI: Robust Evaluation Metrics from Natural Language Inference (https://direct
 ~~BioNLI: Generating a Biomedical NLI Dataset Using Lexico-semantic Constraints for Adversarial Examples~~ (https://arxiv.org/pdf/2210.14814)   
 On the Intractability to Synthesize Factual Inconsistencies in Summarization (https://aclanthology.org/2024.findings-eacl.69.pdf)   
 Evaluating the Factual Consistency of Abstractive Text Summarization (https://aclanthology.org/2020.emnlp-main.750.pdf)   
-A Synthetic Data Approach for Domain Generalization of NLI Models (https://arxiv.org/pdf/2402.12368)   
+~~A Synthetic Data Approach for Domain Generalization of NLI Models~~ (https://arxiv.org/pdf/2402.12368)   
 ABEX: Data Augmentation for Low-Resource NLU via Expanding Abstract Descriptions (https://arxiv.org/pdf/2406.04286)    
 STraTA: Self-Training with Task Augmentation for Better Few-shot Learning (https://arxiv.org/pdf/2109.06270)   
 Generate, Annotate, and Learn: NLP with Synthetic Text (https://direct.mit.edu/tacl/article/doi/10.1162/tacl_a_00492/112605/Generate-Annotate-and-Learn-NLP-with-Synthetic)   
