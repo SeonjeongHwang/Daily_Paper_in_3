@@ -1,5 +1,5 @@
 # Daily Paper in 3 Sentences
-**Keywords**: Dataset, Education, LLM, sLM, Korean, Vocab Expansion, Paraphrase Generation, Knowledge Distillation, Fine-tuning, Controlled Generation, NLI Generation, In-Context Learning
+**Keywords**: Dataset, Education, LLM, sLM, Korean, Vocab Expansion, Paraphrase Generation, Knowledge Distillation, Fine-tuning, Controlled Generation, NLI Generation, In-Context Learning, Multilingual
 
 [2024.07.04]
 ### (EEVE) Efficient and Effective Vocabulary Expansion Towards Multilingual Large Language Models
@@ -48,6 +48,14 @@ _LLM_
 + 기존 방식들처럼 많은 token 수로 sLLM을 학습해 성능을 높이는 대신, LLM을 teacher로 이용해 token probability distillation 적용 (scratch부터 학습시키는 것보다 좋은 성능)
 + Gemma2-27B가 Llama3-70B에 약간 뒤쳐짐, Gemma2-9B가 Llama3-8B보다 outperform
 + 영어 데이터 위주로 학습 (multimodal, multilingual에 적용은 힘들듯), prompt format이 논문에 있음
+
+[2024.07.29]
+### MELA: Multilingual Evaluation of Linguistic Acceptability
+ACL 2024, <MELA: Multilingual Evaluation of Linguistic Acceptability>   
+_LLM, Multilingul_   
++ 10개의 언어(en, de, is, fr, es, it, zh, ja, ar, ru)에 대해 문장의 syntactically acceptability를 binary label로 표기한 데이터셋
++ GPT-4o 모델이 가장 좋은 성능을 보여줌 (zero-shot과 target language 2-shot의 성능 차이가 크지 않았음), GPT-4o가 GPT-3.5 성능의 두 배
++ linguistic acceptability judgement task에서도 cross-lingual transfer가 가능했음
 
 ---------------------------------------
 # + $\alpha$
