@@ -20,7 +20,7 @@ Evaluating Quantized Large Language Models (https://arxiv.org/pdf/2402.18158)
 
 [2024.07.29-2024.07.33]   
 MELA: Multilingual Evaluation of Linguistic Acceptability (https://arxiv.org/pdf/2311.09033)   
-Probing Language Models for Pre-training Data Detection (https://arxiv.org/pdf/2406.01333)
+Probing Language Models for Pre-training Data Detection (https://arxiv.org/pdf/2406.01333)   
 Dissecting Human and LLM Preferences (https://arxiv.org/pdf/2402.11296)   
 An Iterative Associative Memory Model for Empathetic Response Generation (https://arxiv.org/pdf/2402.17959)   
 UniBridge: A Unified Approach to Cross-Lingual Transfer Learning for Low-Resource Languages (https://arxiv.org/pdf/2406.09717)  
@@ -61,5 +61,10 @@ MENLI: Robust Evaluation Metrics from Natural Language Inference (https://direct
 On the Intractability to Synthesize Factual Inconsistencies in Summarization (https://aclanthology.org/2024.findings-eacl.69.pdf)   
 Evaluating the Factual Consistency of Abstractive Text Summarization (https://aclanthology.org/2020.emnlp-main.750.pdf)   
 A Synthetic Data Approach for Domain Generalization of NLI Models (https://arxiv.org/pdf/2402.12368)   
-ABEX: Data Augmentation for Low-Resource NLU via Expanding Abstract Descriptions (https://arxiv.org/pdf/2406.04286)   
+ABEX: Data Augmentation for Low-Resource NLU via Expanding Abstract Descriptions (https://arxiv.org/pdf/2406.04286)    
+STraTA: Self-Training with Task Augmentation for Better Few-shot Learning (https://arxiv.org/pdf/2109.06270)   
+Generate, Annotate, and Learn: NLP with Synthetic Text (https://direct.mit.edu/tacl/article/doi/10.1162/tacl_a_00492/112605/Generate-Annotate-and-Learn-NLP-with-Synthetic)   
+Wanli: Worker and ai collaboration for natural language inference dataset creation (https://arxiv.org/pdf/2201.05955)   
+Synthetic data generation with large language models for text classification: Potential and limitations (https://arxiv.org/pdf/2310.07849)   
+
 
