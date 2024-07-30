@@ -51,11 +51,19 @@ _LLM_
 
 [2024.07.29]
 ### MELA: Multilingual Evaluation of Linguistic Acceptability
-ACL 2024, <MELA: Multilingual Evaluation of Linguistic Acceptability>   
+ACL 2024, <https://arxiv.org/pdf/2311.09033>   
 _LLM, Multilingul_   
 + 10개의 언어(en, de, is, fr, es, it, zh, ja, ar, ru)에 대해 문장의 syntactically acceptability를 binary label로 표기한 데이터셋
 + GPT-4o 모델이 가장 좋은 성능을 보여줌 (zero-shot과 target language 2-shot의 성능 차이가 크지 않았음), GPT-4o가 GPT-3.5 성능의 두 배
 + linguistic acceptability judgement task에서도 cross-lingual transfer가 가능했음
+
+[2024.07.30]
+### Probing Language Models for Pre-training Data Detection
+ACL 2024, <https://arxiv.org/pdf/2406.01333>   
+_LLM_   
++ 개인 정보와 관련된 data contamination이나 benchmark 데이터가 사전훈련에 활용되었는지의 여부를 확인할 수 있어야함
++ 모델 사전학습 동안 활용되었던 텍스트와 그렇지 않은 텍스트는 모델의 internal activation 상에서 다르게 나타날 것이라는 가정하에 연구됨
++ LLM 학습에 사용되지 않은 데이터셋을 member와 non-member로 분할 후 member로 모델 fine-tuning -> member와 non-member 데이터에 대한 모델 activation을 input으로하는 classifier 훈련
 
 ---------------------------------------
 # + $\alpha$
