@@ -18,7 +18,7 @@ Evaluating Quantized Large Language Models (https://arxiv.org/pdf/2402.18158)
 
 [2024.07.29-2024.07.33]   
 ~~MELA: Multilingual Evaluation of Linguistic Acceptability~~ (https://arxiv.org/pdf/2311.09033)   
-Probing Language Models for Pre-training Data Detection (https://arxiv.org/pdf/2406.01333)   
+~~Probing Language Models for Pre-training Data Detection~~ (https://arxiv.org/pdf/2406.01333)   
 Dissecting Human and LLM Preferences (https://arxiv.org/pdf/2402.11296)   
 An Iterative Associative Memory Model for Empathetic Response Generation (https://arxiv.org/pdf/2402.17959)   
 UniBridge: A Unified Approach to Cross-Lingual Transfer Learning for Low-Resource Languages (https://arxiv.org/pdf/2406.09717)  
