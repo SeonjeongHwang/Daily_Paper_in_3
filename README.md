@@ -65,6 +65,12 @@ _LLM_
 + 모델 사전학습 동안 활용되었던 텍스트와 그렇지 않은 텍스트는 모델의 internal activation 상에서 다르게 나타날 것이라는 가정하에 연구됨
 + LLM 학습에 사용되지 않은 데이터셋을 member와 non-member로 분할 후 member로 모델 fine-tuning -> member와 non-member 데이터에 대한 모델 activation을 input으로하는 classifier 훈련
 
+[2024.07.31]
+### Dissecting Human and LLM Preferences
+ACL 2024, <https://arxiv.org/pdf/2402.11296>   
+_LLM_   
++ 
+
 ---------------------------------------
 # + $\alpha$
 [2024.07.03]   
@@ -158,3 +164,11 @@ _LLM, NLI Generation_
 + 다야한 도메인의 NLI 데이터 생성을 위해 few-shot prompting으로 domain 종류 확보 및 sent&para-level premise 생성 : FLAN-PaLM2-L
 + MNLI 데이터셋으로 instruction-tuning된 (100 tokens prompt-tuning) FLAN-PaLM 540B 모델로 hypothesis와 label 쌍을 생성
 + hypothesis 생성시 작은 T5-XL (3B)을 사용하면 데이터 품질이 떨어지고 창의성도 낮음
+
+[2024.07.31]
+### Adversarial NLI: A New Benchmark for Natural Language Understanding
+ACL 2020, <https://aclanthology.org/2020.acl-main.441.pdf>   
+_NLI, Dataset_   
++ human annotator가 context+label에 대해 어려운 hypothesis를 생성하고 SNLI+MNLI+FEVER 및 이전 단계 데이터로 훈련된 모델이 정확하게 분류해낸 example들의 hypothesis들을 재작성 하는 방식으로 annotation
++ entailment: definitely correct / contradiction: definitely incorrect / neutral: neither definitely correct nor definitely incorrect로 paraphrase해서 labeling 요청
++ ANLI의 premise가 되는 context는 longer, multi-sentence로 구성되며 HotpotQA의 context와 WikiHow 및 다양한 domain의 resource로부터 수집됨
