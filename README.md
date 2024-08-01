@@ -65,11 +65,13 @@ _LLM_
 + 모델 사전학습 동안 활용되었던 텍스트와 그렇지 않은 텍스트는 모델의 internal activation 상에서 다르게 나타날 것이라는 가정하에 연구됨
 + LLM 학습에 사용되지 않은 데이터셋을 member와 non-member로 분할 후 member로 모델 fine-tuning -> member와 non-member 데이터에 대한 모델 activation을 input으로하는 classifier 훈련
 
-[2024.07.31]
+[2024.08.01]
 ### Dissecting Human and LLM Preferences
 ACL 2024, <https://arxiv.org/pdf/2402.11296>   
 _LLM_   
-+ 
++ pairwise comparsion으로 사람과 LLM이 더 선호하는 response를 labeling -> 각 response에 대해 29가지 property를 rating (GPT-4-turbo가 1,2,3으로 rating) -> 각 property가 선호도에 미치는 영향 탐색
++ 사람은 error에는 덜 민감하며, 모델이 한계를 인정했을 때 비선호하고, 자신의 주장과 일치하는 response를 선호
++ model은 정확, 명료, harmless한 답변을 선호하며 유사한 크기의 LLM들이 비슷한 선호 경향성을 보임
 
 ---------------------------------------
 # + $\alpha$
