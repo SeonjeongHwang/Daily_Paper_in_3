@@ -14,14 +14,20 @@ MiniLLM: Knowledge Distillation of Large Language Models (https://arxiv.org/pdf/
 ~~LoRA: Low-rank adaptation of large language models~~ (https://arxiv.org/pdf/2106.09685)  
 MiniLLM: Knowledge Distillation of Large Language Models (https://arxiv.org/pdf/2306.08543)  
 Evaluating Quantized Large Language Models (https://arxiv.org/pdf/2402.18158)   
-~~Enhancing In-Context Learning via Implicit Demonstration Augmentation~~ (https://arxiv.org/pdf/2407.00100)
+~~Enhancing In-Context Learning via Implicit Demonstration Augmentation~~ (https://arxiv.org/pdf/2407.00100)   
 
 [2024.07.29-2024.07.33]   
 ~~MELA: Multilingual Evaluation of Linguistic Acceptability~~ (https://arxiv.org/pdf/2311.09033)   
 ~~Probing Language Models for Pre-training Data Detection~~ (https://arxiv.org/pdf/2406.01333)   
 ~~Dissecting Human and LLM Preferences~~ (https://arxiv.org/pdf/2402.11296)   
 UniBridge: A Unified Approach to Cross-Lingual Transfer Learning for Low-Resource Languages (https://arxiv.org/pdf/2406.09717)  
-Attribute First, then Generate: Locally-attributable Grounded Text Generation (https://arxiv.org/pdf/2403.17104)
+Attribute First, then Generate: Locally-attributable Grounded Text Generation (https://arxiv.org/pdf/2403.17104)   
+
+[2024.08.07-2024.08.10]
+MiniLLM: Knowledge Distillation of Large Language Models (https://arxiv.org/pdf/2306.08543)  
+Evaluating Quantized Large Language Models (https://arxiv.org/pdf/2402.18158)   
+UniBridge: A Unified Approach to Cross-Lingual Transfer Learning for Low-Resource Languages (https://arxiv.org/pdf/2406.09717)  
+Attribute First, then Generate: Locally-attributable Grounded Text Generation (https://arxiv.org/pdf/2403.17104)   
 
 **[Published Yet]**
 Dr.Academy: A Benchmark for Evaluating Questioning Capability in Education for Large Language Models
