@@ -180,5 +180,5 @@ _NLI, Dataset_
 EMNLP 2015, <https://nlp.stanford.edu/pubs/snli_paper.pdf>   
 _NLI, Dataset_   
 + premise와 hypothesis가 지칭하는 이벤트나 엔티티가 동일하다는 가정이 있고 없고에 따라 labeling이 달라지는 불확실성이 존재함
-+ premise와 hypothesis가 특정 시나리오를 묘사하며, 동일한 관점에서 그 시나리오를 설명한다는 가정 하에 labeling됨
-+ Annotation instruction에서 "We will show you the caption for a photo. We will not show you the photo."로 한 가지 상황에 대해 묘사하는 문장을 쓰도록 유도
++ premise와 hypothesis가 특정 시나리오를 묘사하며, 동일한 관점에서 그 시나리오를 설명한다는 가정 하에 labeling됨 ("We will show you the caption for a photo. We will not show you the photo.")
++ premise가 photo의 전부를 묘사한다는 가정이 있기 때문에 hypothesis가 다른 대상에 대한 묘사를 하면 contradiction이 됨 -> not enought info로도 분류될 여지가 있기 때문에 fact-checking에는 부적절
