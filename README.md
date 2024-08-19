@@ -174,3 +174,11 @@ _NLI, Dataset_
 + human annotator가 context+label에 대해 어려운 hypothesis를 생성하고 SNLI+MNLI+FEVER 및 이전 단계 데이터로 훈련된 모델이 정확하게 분류해낸 example들의 hypothesis들을 재작성 하는 방식으로 annotation
 + entailment: definitely correct / contradiction: definitely incorrect / neutral: neither definitely correct nor definitely incorrect로 paraphrase해서 labeling 요청
 + ANLI의 premise가 되는 context는 longer, multi-sentence로 구성되며 HotpotQA의 context와 WikiHow 및 다양한 domain의 resource로부터 수집됨
+
+[2024.08.19]
+### A large annotated corpus for learning natural language inference
+EMNLP 2015, <https://nlp.stanford.edu/pubs/snli_paper.pdf>   
+_NLI, Dataset_   
++ premise와 hypothesis가 지칭하는 이벤트나 엔티티가 동일하다는 가정이 있고 없고에 따라 labeling이 달라지는 불확실성이 존재함
++ premise와 hypothesis가 특정 시나리오를 묘사하며, 동일한 관점에서 그 시나리오를 설명한다는 가정 하에 labeling됨
++ Annotation instruction에서 "We will show you the caption for a photo. We will not show you the photo."로 한 가지 상황에 대해 묘사하는 문장을 쓰도록 유도
