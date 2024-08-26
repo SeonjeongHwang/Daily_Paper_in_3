@@ -32,6 +32,9 @@ Attribute First, then Generate: Locally-attributable Grounded Text Generation (h
 **[Published Yet]**
 Dr.Academy: A Benchmark for Evaluating Questioning Capability in Education for Large Language Models
 
+GPTScore   
+G-Eval   
+
 --------------------------------------------   
 **[Paraphrase Generation]**   
 ~~Impossible Distillation for Paraphrasing and Summarization: How to Make High-quality Lemonade out of Small, Low-quality Models~~ (https://aclanthology.org/2024.naacl-long.250.pdf)   
