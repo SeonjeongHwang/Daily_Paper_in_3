@@ -34,6 +34,7 @@ Dr.Academy: A Benchmark for Evaluating Questioning Capability in Education for L
 
 GPTScore   
 G-Eval   
+https://blog.google/products/gemini/google-gemini-learning-features/?utm_source=kw-newsletter&utm_medium=email&utm_campaign=08292024&utm_content=cta (Gemini-Edu)   
 
 --------------------------------------------   
 **[Paraphrase Generation]**   
