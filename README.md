@@ -73,6 +73,14 @@ _LLM_
 + 사람은 error에는 덜 민감하며, 모델이 한계를 인정했을 때 비선호하고, 자신의 주장과 일치하는 response를 선호
 + model은 정확, 명료, harmless한 답변을 선호하며 유사한 크기의 LLM들이 비슷한 선호 경향성을 보임
 
+[2024.09.01]
+### Let Me Speak Freely? A Study on the Impact of Format Restrictions on Performance of Large Language Models
+Archive, <https://arxiv.org/pdf/2408.02442>   
+_LLM_, Controlled Generation_   
++ Post-processing의 용이성을 위해 format을 제한하여 prompting하는 것이 LLM의 generation quality에 미치는 영향 탐색
++ 일관성있는 경향성은 없지만 structured generation이 LLM의 reasoning capability를 저하하며, JSON-mode가 오히려 classification task에서는 좋은 영향을 주는 경향을 보임
++ NL-to-Format 또한 NL 만큼의 성능을 보여주지 못하는 경우도 있음
+
 ---------------------------------------
 # + $\alpha$
 [2024.07.03]   
