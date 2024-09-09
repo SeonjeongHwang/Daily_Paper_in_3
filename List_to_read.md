@@ -74,4 +74,6 @@ Generate, Annotate, and Learn: NLP with Synthetic Text (https://direct.mit.edu/t
 Wanli: Worker and ai collaboration for natural language inference dataset creation (https://arxiv.org/pdf/2201.05955)   
 Synthetic data generation with large language models for text classification: Potential and limitations (https://arxiv.org/pdf/2310.07849)   
 
-
+**[Education]**   
+The prediction of toefl reading comprehension item difficulty for expository prose passages for three item types: main idea, inference, and supporting idea items (https://onlinelibrary.wiley.com/doi/epdf/10.1002/j.2333-8504.1993.tb01524.x)   
+An analysis of the dimenstionality of TOEFL reading comprehension items (https://onlinelibrary.wiley.com/doi/epdf/10.1002/j.2333-8504.1995.tb01662.x)   
