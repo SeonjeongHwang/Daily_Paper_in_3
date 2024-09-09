@@ -1,10 +1,10 @@
 # Daily Paper in 3 Sentences
-**Keywords**: Dataset, Education, LLM, sLM, Korean, Vocab Expansion, Paraphrase Generation, Knowledge Distillation, Fine-tuning, Controlled Generation, NLI Generation, In-Context Learning, Multilingual
+**Keywords**: Dataset, Education, LLM, sLM, Korean, Vocab Expansion, Paraphrase Generation, Knowledge Distillation, Fine-tuning, Controlled Generation, NLI Generation, In-Context Learning, Multilingual, Data Augmentation
 
 [2024.07.04]
 ### (EEVE) Efficient and Effective Vocabulary Expansion Towards Multilingual Large Language Models
 Archive 2024, <https://arxiv.org/pdf/2402.14714>    
-_Korean | LLM | Vocab Expansion_
+_Korean, LLM, Vocab Expansion_
 + English-centric LLM의 tokenizer를 사용했을 때 한국어는 더 많은 토큰으로 분리됨 -> longer response times, shorter context lengths, higher API costs
 + 새로운 vocab이 반영된 embedding layer와 LM head를 업데이트하기 위해 6단계의 순차적 훈련 -> 모델이 기존 token과 새로운 token들을 align할 수 있도록
 + pretraining 단계에서 Transformer layer들을 업데이트하기 위해 QLoRA 활용, fine-tuning 단계에서는  DPO 적용 및 영어 intruction tuning 데이터 번역해서 활용
@@ -76,7 +76,7 @@ _LLM_
 [2024.09.01]
 ### Let Me Speak Freely? A Study on the Impact of Format Restrictions on Performance of Large Language Models
 Archive, <https://arxiv.org/pdf/2408.02442>   
-_LLM_, Controlled Generation_   
+_LLM, Controlled Generation_   
 + Post-processing의 용이성을 위해 format을 제한하여 prompting하는 것이 LLM의 generation quality에 미치는 영향 탐색
 + 일관성있는 경향성은 없지만 structured generation이 LLM의 reasoning capability를 저하하며, JSON-mode가 오히려 classification task에서는 좋은 영향을 주는 경향을 보임
 + NL-to-Format 또한 NL 만큼의 성능을 보여주지 못하는 경우도 있음
@@ -190,3 +190,11 @@ _NLI, Dataset_
 + premise와 hypothesis가 지칭하는 이벤트나 엔티티가 동일하다는 가정이 있고 없고에 따라 labeling이 달라지는 불확실성이 존재함
 + premise와 hypothesis가 특정 시나리오를 묘사하며, 동일한 관점에서 그 시나리오를 설명한다는 가정 하에 labeling됨 ("We will show you the caption for a photo. We will not show you the photo.")
 + premise가 photo의 전부를 묘사한다는 가정이 있기 때문에 hypothesis가 다른 대상에 대한 묘사를 하면 contradiction이 됨 -> not enought info로도 분류될 여지가 있기 때문에 fact-checking에는 부적절
+
+[2024.09.09]
+### ABEX: Data Augmentation for Low-Resource NLU via Expanding Abstract Descriptions
+ACL 2024, <https://arxiv.org/pdf/2406.04286>   
+_Data Augmentation, LLM, Knowledge Distillation_   
++ Stage 1. abstract description으로부터 small document를 생성하도록 BART를 훈련 -> long document -> small document -> abstract description 순으로 llama2-13B prompting하여 합성
++ Stage 2. target-related information (TRI)를 유지한체 document를 abstract로 바꾸는건 LLM으로 어려움 (controlled generation bottleneck) -> document를 AMR graph로 변환 후 detail한 정보에 해당되는 leaf를 지우고, sub-graph 유사도를 기준으로 유사한 다른 document graph와 mixing -> 다시 text로 변환
++ QA에서의 augmentation은 question augmentation -> 동일한 답을 가지는 다양한 형태의 question 생성
