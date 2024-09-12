@@ -1,5 +1,5 @@
 # Daily Paper in 3 Sentences
-**Keywords**: Dataset, Education, LLM, sLM, Korean, Vocab Expansion, Paraphrase Generation, Knowledge Distillation, Fine-tuning, Controlled Generation, NLI Generation, In-Context Learning, Multilingual, Data Augmentation
+**Keywords**: Dataset, Education, LLM, sLM, Korean, Vocab Expansion, Paraphrase Generation, Knowledge Distillation, Fine-tuning, Controlled Generation, NLI Generation, In-Context Learning, Multilingual, Data Augmentation, CoT
 
 [2024.07.04]
 ### (EEVE) Efficient and Effective Vocabulary Expansion Towards Multilingual Large Language Models
@@ -80,6 +80,14 @@ _LLM, Controlled Generation_
 + Post-processing의 용이성을 위해 format을 제한하여 prompting하는 것이 LLM의 generation quality에 미치는 영향 탐색
 + 일관성있는 경향성은 없지만 structured generation이 LLM의 reasoning capability를 저하하며, JSON-mode가 오히려 classification task에서는 좋은 영향을 주는 경향을 보임
 + NL-to-Format 또한 NL 만큼의 성능을 보여주지 못하는 경우도 있음
+
+[2024.09.12]
+### Large Language Models Are Reasoning Teachers
+ACL 2023, <https://aclanthology.org/2023.acl-long.830.pdf>   
+_LLM, Knowledge Distillation, CoT, Data Augmentation_   
++ Zero-shot CoT로 LLM을 이용해 reasoning을 생성 (다양한 reasoning을 모두 학습시키기 위해 temperature=0.7로 최대 64가지(수학), 보통은 8가지 reasoning 생성) -> Curation -> small model에 autoregressive language modeling OR next-token prediction objective를 통해 훈련
++ example별로 한가지 reasoning을 생성해 합성시키는 Fine-tune-CoT의 경우 작은 모델들(GPT-3 0.3B, 1.3B & T5 & GPT-2)에서 Fine-tuning보다 전반적으로 성능이 좋지 않음 (일부 task들에서는 효과 있긴함; Shuffled Objects, Last Letter)
++ T5보다 FLAN-T5가 Fine-tune-CoT를 적용했을 때 더 성능이 높았으며, diverse reasoning Fine-tune-CoT는 vanilla fine-tuning보다 훨씬 높은 성능을 얻음 (그런데 이건 그냥 학습 데이터가 8배가 되어서, data augmentation의 효과가 아닐지)
 
 ---------------------------------------
 # + $\alpha$
