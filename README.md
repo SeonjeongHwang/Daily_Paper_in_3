@@ -89,6 +89,14 @@ _LLM, Knowledge Distillation, CoT, Data Augmentation_
 + example별로 한가지 reasoning을 생성해 합성시키는 Fine-tune-CoT의 경우 작은 모델들(GPT-3 0.3B, 1.3B & T5 & GPT-2)에서 Fine-tuning보다 전반적으로 성능이 좋지 않음 (일부 task들에서는 효과 있긴함; Shuffled Objects, Last Letter)
 + T5보다 FLAN-T5가 Fine-tune-CoT를 적용했을 때 더 성능이 높았으며, diverse reasoning Fine-tune-CoT는 vanilla fine-tuning보다 훨씬 높은 성능을 얻음 (그런데 이건 그냥 학습 데이터가 8배가 되어서, data augmentation의 효과가 아닐지)
 
+[2024.09.18]
+### Distilling Step-by-Step! Outperforming Larger Language Models with Less Training Data and Smaller Model Sizes
+ACL Findinigs 2023, <https://aclanthology.org/2023.findings-acl.507.pdf>   
+_LLM, Knowledge Distillation, CoT_   
++ LLM의 inference time에 사용하기에는 memory와 compute적인 측면에서 비싸기 때문에 LLM이 생성한 rationale과 label을 활용해 small model에 distilling
++ prefix label에 따라서 모델에 input에 대한 rationale을 생성하거나 label을 생성하도록 훈련 (multi-task learning 방식으로 훈련됨)
++ Distilling model이 LLM의 성능을 능가하기도 했음
+
 ---------------------------------------
 # + $\alpha$
 [2024.07.03]   
