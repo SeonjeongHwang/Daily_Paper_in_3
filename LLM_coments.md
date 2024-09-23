@@ -31,3 +31,13 @@ ICML 2024, <https://arxiv.org/pdf/2402.14905>
 
 Question: small model들에 비해 성능이 많이 높아졌다고 하더라도, LLM zero-shot 성능보다 매우 떨어짐 -> zero-shot으로의 활용성이 있을지 의문임. small-size model의 장점은 fine-tuning이 간편하다는 것인데, 여기서는 Chat과 API-calling task 두가지에 대해서만 fine-tuning을 진행함. 과연 이전까지의 높은 성능을 보였단 encoder기반 혹은 encoder-decoder 모델들보다 fine-tuning 성능도 높을지 의문임
 ![image](https://github.com/user-attachments/assets/ec272530-4203-4947-9c77-c471cce21fca)
+
+[2024.09.23]
+### Prefix-Tuning: Optimizing Continuous Prompts for Generation
+ACL 2021, <https://arxiv.org/pdf/2101.00190>   
+
+Question: 
+- GPT-2 (medium & large)와 BART는 in-context learning 능력이 현저히 떨어지는데 in-context learning과 유사한 원리인 prefix-tuning에서 효과가 있을까?
+- task를 table-to-text와 summarization을 했는데 이들은 input text의 element들을 활용해 자연스러운 sequence를 생성하는 task들임, 이와 다른 NLI나 QA, MT 등에서도 잘 적용이 될까?
+- prefix input에 해당하는 time-step에서는 Transformer block 대신 MLP(parameter)의 값으로 대체되는거 맞나?
+- 해당 task를 학습한 parameter의 수가 매우 적은데 어떻게 fine-tuning과 유사한 결과를 얻을 수 있었는가? 
