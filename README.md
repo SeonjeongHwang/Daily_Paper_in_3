@@ -214,3 +214,11 @@ _Data Augmentation, LLM, Knowledge Distillation_
 + Stage 1. abstract description으로부터 small document를 생성하도록 BART를 훈련 -> long document -> small document -> abstract description 순으로 llama2-13B prompting하여 합성
 + Stage 2. target-related information (TRI)를 유지한체 document를 abstract로 바꾸는건 LLM으로 어려움 (controlled generation bottleneck) -> document를 AMR graph로 변환 후 detail한 정보에 해당되는 leaf를 지우고, sub-graph 유사도를 기준으로 유사한 다른 document graph와 mixing -> 다시 text로 변환
 + QA에서의 augmentation은 question augmentation -> 동일한 답을 가지는 다양한 형태의 question 생성
+
+[2024.10.05]
+### TRUE: Re-evaluating Factual Consistency Evaluation
+NAACL 2022, <https://aclanthology.org/2022.naacl-main.287.pdf>   
+_NLI, Dataset_
++ input text와 target text 간의 factual consistency를 binary로 평가하는 benchmark
++ Abstractive Summarization (input: article / output: multiple sentences) | Dialogue Generation (input: knowledge paragraph or evidence sentences / output: response for dialogue) | Fact Verification (input: Wikipedia / output: claim) | Paraphrase Detection
++ ANLI로 훈련한 T5-11B, $Q^2$ 로 훈련한 T5-11B가 가장 높은 성능 (Google Deepmind 논문에서는 WANLI가 더 좋았음)
