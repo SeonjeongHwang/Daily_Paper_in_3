@@ -97,6 +97,14 @@ _LLM, Knowledge Distillation, CoT_
 + prefix label에 따라서 모델에 input에 대한 rationale을 생성하거나 label을 생성하도록 훈련 (multi-task learning 방식으로 훈련됨)
 + Distilling model이 LLM의 성능을 능가하기도 했음
 
+[2024.01.02]
+### Search, Verify and Feedback: Towards Next Generation Post-training Paradigm of Foundation Models via Verifier Engineering
+Archive, <https://arxiv.org/pdf/2411.11504>   
+_LLM_  
++ large-scale human annotation data를 LLM foundation model의 supervision signal로 활용하는 것에 한계를 직면 -> verifier enginnerting을 활용할 필요
++ Search: model output distribution에 포함된 potentially problematic sample들을 생성 (performance boundary임) -> Verify: 적절한 verifier 조합으로 평가 (evaluation metric이나 rule-detection, manual annotation 등) -> Feedback: feedback을 기반으로 모델 optimize
++ 최적의 Verify Granularity는 task마다 다름 (ex: mathematical reasoning은 token-level, 일반적인 reasoning task들은 step 또는 sentence별로)   
+
 ---------------------------------------
 # + $\alpha$
 [2024.07.03]   
