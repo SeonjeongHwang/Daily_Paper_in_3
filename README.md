@@ -97,7 +97,7 @@ _LLM, Knowledge Distillation, CoT_
 + prefix label에 따라서 모델에 input에 대한 rationale을 생성하거나 label을 생성하도록 훈련 (multi-task learning 방식으로 훈련됨)
 + Distilling model이 LLM의 성능을 능가하기도 했음
 
-[2024.01.02]
+[2025.01.02]
 ### Search, Verify and Feedback: Towards Next Generation Post-training Paradigm of Foundation Models via Verifier Engineering
 Archive, <https://arxiv.org/pdf/2411.11504>   
 _LLM_  
