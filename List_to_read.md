@@ -74,6 +74,45 @@ Generate, Annotate, and Learn: NLP with Synthetic Text (https://direct.mit.edu/t
 Wanli: Worker and ai collaboration for natural language inference dataset creation (https://arxiv.org/pdf/2201.05955)   
 Synthetic data generation with large language models for text classification: Potential and limitations (https://arxiv.org/pdf/2310.07849)   
 
-**[Education]**   
-The prediction of toefl reading comprehension item difficulty for expository prose passages for three item types: main idea, inference, and supporting idea items (https://onlinelibrary.wiley.com/doi/epdf/10.1002/j.2333-8504.1993.tb01524.x)   
-An analysis of the dimenstionality of TOEFL reading comprehension items (https://onlinelibrary.wiley.com/doi/epdf/10.1002/j.2333-8504.1995.tb01662.x)   
+**[EMNLP 2024]**
+### Evaluation
+QGEval: Benchmarking Multi-dimensional Evaluation for Question Generation (https://arxiv.org/pdf/2406.05707)   
+Distractor Generation in Multiple-Choice Tasks: A Survey of Methods, Datasets, and Evaluation (https://arxiv.org/pdf/2402.01512)   
+Revisiting Automated Evaluation for Long-form Table Question Answering in the Era of Large Language Models (https://aclanthology.org/2024.emnlp-main.815.pdf)   
+Themis: A Reference-free NLG Evaluation Language Model with Flexibility and Interpretability (https://arxiv.org/pdf/2406.18365)   
+Leveraging Large Language Models for NLG Evaluation: Advances and Challenges (https://arxiv.org/pdf/2401.07103)   
+Rationale-Aware Answer Verification by Pairwise Self-Evaluation (https://arxiv.org/pdf/2410.04838)   
+Foundational Autoraters: Taming Large Language Models for Better Automatic Evaluation (https://arxiv.org/pdf/2407.10817)   
+Mitigating the Impact of Reference Quality on Evaluation of Summarization Systems with Reference-Free Metrics (https://arxiv.org/pdf/2410.10867)   
+Re-Evaluating Evaluation for Multilingual Summarization (https://aclanthology.org/2024.emnlp-main.1085.pdf)   
+Rethinking Pragmatics in Large Language Models: Towards Open-Ended Evaluation and Preference Tuning (https://aclanthology.org/2024.emnlp-main.1258.pdf)   
+
+
+**[ACL 2024]**
+### Evaluation
+L-EVAL: INSTITUTING STANDARDIZED EVALUATION FOR LONG CONTEXT LANGUAGE MODELS (https://arxiv.org/pdf/2307.11088)   
+RORA: Robust Free-Text Rationale Evaluation (https://arxiv.org/pdf/2402.18678)   
+FineSurE: Fine-grained Summarization Evaluation using LLMs (https://arxiv.org/pdf/2407.00908)   
+DocLens: Multi-aspect Fine-grained Medical Text Evaluation (https://arxiv.org/pdf/2311.09581)   
+ConSiDERS-The-Human Evaluation Framework: Rethinking Human Evaluation for Generative Large Language Models (https://arxiv.org/pdf/2405.18638)   
+Self-Alignment for Factuality: Mitigating Hallucinations in LLMs via Self-Evaluation (https://arxiv.org/pdf/2402.09267)   
+FLEUR: An Explainable Reference-Free Evaluation Metric for Image Captioning Using a Large Multimodal Model (https://arxiv.org/pdf/2406.06004)   
+KIEval: A Knowledge-grounded Interactive Evaluation Framework for Large Language Models (https://arxiv.org/pdf/2402.15043)   
+inftyBench: Extending Long Context Evaluation Beyond 100K Tokens (https://arxiv.org/pdf/2402.13718)   
+BatchEval: Towards Human-like Text Evaluation (https://arxiv.org/pdf/2401.00437)   
+LLM-Rubric: A Multidimensional, Calibrated Approach to Automated Evaluation of Natural Language Texts (https://arxiv.org/pdf/2501.00274)   
+
+### QG
+Chain-of-Exemplar: Enhancing Distractor Generation for Multimodal Educational Question Generation (https://aclanthology.org/2024.acl-long.432.pdf)   
+Consistency Training by Synthetic Question Generation for Conversational Question Answering (https://aclanthology.org/2024.acl-short.57.pdf)    
+
+
+**[NAACL 2024]**
+### Evaluation
+ARES: An Automated Evaluation Framework for Retrieval-Augmented Generation Systems (https://aclanthology.org/2024.naacl-long.20.pdf)   
+Not All Metrics Are Guilty: Improving NLG Evaluation by Diversifying References (https://aclanthology.org/2024.naacl-long.367.pdf)   
+SocREval: Large Language Models with the Socratic Method for Reference-free Reasoning Evaluation (https://aclanthology.org/2024.findings-naacl.175.pdf)   
+DialogBench: Evaluating LLMs as Human-like Dialogue Systems (https://aclanthology.org/2024.naacl-long.341.pdf)   
+Defining and Detecting Vulnerability in Human Evaluation Guidelines: A Preliminary Study Towards Reliable NLG Evaluation (https://aclanthology.org/2024.naacl-long.441.pdf)   
+X-Eval: Generalizable Multi-aspect Text Evaluation via Augmented Instruction Tuning with Auxiliary Evaluation Aspects (https://aclanthology.org/2024.naacl-long.473.pdf)   
+Is Reference Necessary in the Evaluation of NLG Systems? When and Where? (https://aclanthology.org/2024.naacl-long.474.pdf)   
