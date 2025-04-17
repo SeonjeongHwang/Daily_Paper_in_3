@@ -1,5 +1,5 @@
 # Daily Paper in 3 Sentences
-**Keywords**: Dataset, Education, LLM, sLM, Korean, Vocab Expansion, Paraphrase Generation, Knowledge Distillation, Fine-tuning, Controlled Generation, NLI Generation, In-Context Learning, Multilingual, Data Augmentation, CoT
+**Keywords**: Dataset, Education, LLM, sLM, Korean, Vocab Expansion, Paraphrase Generation, Knowledge Distillation, Fine-tuning, Controlled Generation, NLI Generation, In-Context Learning, Multilingual, Data Augmentation, CoT, Search, RL
 
 [2024.07.04]
 ### (EEVE) Efficient and Effective Vocabulary Expansion Towards Multilingual Large Language Models
@@ -103,7 +103,15 @@ Archive, <https://arxiv.org/pdf/2411.11504>
 _LLM_  
 + large-scale human annotation data를 LLM foundation model의 supervision signal로 활용하는 것에 한계를 직면 -> verifier enginnerting을 활용할 필요
 + Search: model output distribution에 포함된 potentially problematic sample들을 생성 (performance boundary임) -> Verify: 적절한 verifier 조합으로 평가 (evaluation metric이나 rule-detection, manual annotation 등) -> Feedback: feedback을 기반으로 모델 optimize
-+ 최적의 Verify Granularity는 task마다 다름 (ex: mathematical reasoning은 token-level, 일반적인 reasoning task들은 step 또는 sentence별로)   
++ 최적의 Verify Granularity는 task마다 다름 (ex: mathematical reasoning은 token-level, 일반적인 reasoning task들은 step 또는 sentence별로)
+
+[2025.04.17]
+### Policy Guided Tree Search for Enhanced LLM Reasoning
+Archive, <https://arxiv.org/pdf/2502.06813>   
+_LLM, Search, RL_   
++ Reasoning을 위한 기존의 tree search algorithm들 (DFS, BFS, A*, MCTS 등)의 한계점 - 각 step마다 가능한 action space가 매우 크기 때문에 불필요한 탐색이 많아짐, ground-truth reasoning chain이 없을 경우 reward도 sparse하고 noise함, reward로 querying LLM하는 것은 비용적 부담 큼
++ MDP 기반의 search 알고리즘; LLM으로 매번 하나의 sentence를 생성하며, {Expand, Branch, Backtrack, Terminate} 중 하나의 action이 취해진다 - 이 action은 Graph-Transformer 기반의 Policy function에 의해 선택되며, 이 policy 모델은 PPO로 훈련된다.
++ reward function은 각 state에 대한 LLM의 log-likelihood 값이며, 각 action의 cost 또한 reward function에 포함시켜 비용이 많이 드는 action에 penality를 부과해 policy가 효율적인 path로 유도하게 만든다.
 
 ---------------------------------------
 # + $\alpha$
